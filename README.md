@@ -22,19 +22,26 @@ This repository contains my solutions to the SQL assessment involving query writ
 ---
 
 ## Challenges
-- **Date functions**: Ensuring compatibility between DATEDIFF and different SQL dialects.
-- **Transaction frequency categorization**: Ensuring correct grouping by month.
-- **Handling NULLs**: Used COALESCE to avoid NULLs in aggregation.
+
+- Data volume slowed MySQL when importing `.sql` file; resolved by optimizing system memory and importing via CLI instead of GUI.
+- Some tables lacked sample `withdrawals`, but weren’t directly needed for queries.
+- Ensured monetary values were correctly converted from **kobo** to **naira** where applicable.
+  
+    ## Major Precautions i took in the course of the project
+     - **Date functions**: Ensuring compatibility between DATEDIFF and different SQL dialects.
+     - **Transaction frequency categorization**: Ensuring correct grouping by month.
+     - **Handling NULLs**: Used COALESCE to avoid NULLs in aggregation.
+
 
 ---
 
-## Assumptions
+## Assumptions and Notes
 
-### Missing Table: `plans_currency`
+### 1. Missing Table: `plans_currency`
 
-The `plans_plan` table references a `plans_currency` table via a foreign key on `currency_id`. However, the definition for `plans_currency` was not provided in the assessment materials.
+The `plans_plan` table references a foreign key to a table `plans_currency` using the field `currency_id`. However, the definition of `plans_currency` was **not included** in the provided schema or assessment materials.
 
-To ensure the schema could be created and referenced successfully, I created a minimal definition for this missing table:
+**To maintain database integrity**, I created a minimal mock version of the `plans_currency` table as shown below:
 
 ```sql
 CREATE TABLE plans_currency (
@@ -42,6 +49,7 @@ CREATE TABLE plans_currency (
   name VARCHAR(50) NOT NULL
 );
 ```
+
 ---
 ## Author
 OGBE PHILLIP OSEMUDIAME || https://www.linkedin.com/in/phillip-ogbe-3a9023173
