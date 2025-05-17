@@ -28,9 +28,9 @@ This repository contains my solutions to the SQL assessment involving query writ
 - Ensured monetary values were correctly converted from **kobo** to **naira** where applicable.
   
     ## Major Precautions i took in the course of the project
-     - **Date functions**: Ensuring compatibility between DATEDIFF and different SQL dialects.
-     - **Transaction frequency categorization**: Ensuring correct grouping by month.
-     - **Handling NULLs**: Used COALESCE to avoid NULLs in aggregation.
+     - **Date functions**: I Ensured compatibility between DATEDIFF and different SQL dialects.
+     - **Transaction frequency categorization**: I Ensured correct grouping by month.
+     - **Handling NULLs**: I Used COALESCE to avoid NULLs in aggregation.
 
 
 ---
