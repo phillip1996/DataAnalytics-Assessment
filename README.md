@@ -44,5 +44,5 @@ CREATE TABLE plans_currency (
 ```
 ---
 ## Author
-- ** OGBE PHILLIP OSEMUDIAME || https://www.linkedin.com/in/phillip-ogbe-3a9023173
+OGBE PHILLIP OSEMUDIAME || https://www.linkedin.com/in/phillip-ogbe-3a9023173
 
