@@ -26,6 +26,8 @@ This repository contains my solutions to the SQL assessment involving query writ
 - **Transaction frequency categorization**: Ensuring correct grouping by month.
 - **Handling NULLs**: Used COALESCE to avoid NULLs in aggregation.
 
+---
+
 ## Assumptions
 
 ### Missing Table: `plans_currency`
@@ -39,7 +41,8 @@ CREATE TABLE plans_currency (
   id INT NOT NULL PRIMARY KEY,
   name VARCHAR(50) NOT NULL
 );
-
+```
+---
 ## Author
 - ** OGBE PHILLIP OSEMUDIAME || https://www.linkedin.com/in/phillip-ogbe-3a9023173
 
